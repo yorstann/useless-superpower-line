@@ -7,13 +7,14 @@ import { join } from "node:path";
 // sounds epic for exactly one beat — instant teleportation anywhere
 // on Earth — and then collapses into worthlessness with the catch:
 // only to places the hero has already reached the slow way, on foot.
-// The joke is the gap between the power's promise and its one
-// condition, which arrives in the last few words.
+// Pass 2 adds a second, smaller punch at the very end: after all that
+// range, the hero's entire teleport network so far is his own kitchen,
+// which makes the uselessness concrete enough to picture.
 // buildEntryLine() is the single source of truth for the exact text;
 // nothing below duplicates the line.
 const POWER_BEATS = [
-  "I can teleport instantly to anywhere on Earth —",
-  "as long as I've already walked there.",
+  "I can teleport instantly to anywhere on Earth,",
+  "but only to places I've already walked to — so far, my kitchen.",
 ] as const;
 
 export function buildEntryLine(): string {
